@@ -2,8 +2,45 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "price": 450000,
+      "title": "Rolls-Royce Phantom",
+      "desc": "Schönes Auto",
+      "img_src": "https://4kwallpapers.com/images/wallpapers/rolls-royce-phantom-ewb-tempus-collection-amoled-2021-5k-8k-3840x2160-4790.jpg"
+    },
+    {
+      "id": 2,
+      "price": 200000,
+      "title": "Mercedes Maybach",
+      "desc": "Schönes Auto",
+      "img_src": "https://i.pinimg.com/originals/76/47/47/764747f8fff268d954d44ced00790319.jpg"
+    },
+    {
+      "id": 3,
+      "price": "100000",
+      "title": "BMW 7er",
+      "desc": "Schönes Auto",
+      "img_src": "https://images6.alphacoders.com/880/880915.jpg"
+    },
+    {
+      "id": 4,
+      "price": 100000,
+      "title": "Audi A8",
+      "desc": "Schönes Auto",
+      "img_src": "https://images6.alphacoders.com/615/615519.jpg"
+    },
+    {
+      "id": 5,
+      "price": 1200000,
+      "title": "McLaren P1",
+      "desc": "Schönes Auto",
+      "img_src": "https://www.hdcarwallpapers.com/walls/mclaren_p1_by_mso_geneva_auto_2016-wide.jpg"
+    },
+    {
+      "id": 6,
+      "price": 5000000,
+      "title": "Bugatti Chiron",
+      "desc": "Schönes Auto",
+      "img_src": "https://img5.goodfon.com/wallpaper/nbig/4/f1/bugatti-chiron-garage-sport-mashina-diski-krasnyi-chernyi-fo.jpg"
     }
   ],
   "comments": [
