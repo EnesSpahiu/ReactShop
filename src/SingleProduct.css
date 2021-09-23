@@ -1,0 +1,38 @@
+.singleCard.card{
+    height: 100%!important;
+    margin-bottom: 21px;
+}
+
+.container{
+    padding: 0px;
+}
+
+.card{
+    border: none !important;
+}
+
+.App{
+    background-color: darkslategrey !important;
+    height: 100%;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: darkslategrey !important;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    width: 100%;
+}
+
+.singleContainer.container{
+    background-color: black;
+    border: solid white 3px;
+}
+
+.singleBody.card-body{
+    background-color: black;
+}
+
+.footer{
+width: 100%;
+}

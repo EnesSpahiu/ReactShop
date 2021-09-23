@@ -1,0 +1,18 @@
+.allCard.card{
+    height: 500px !important;
+    margin-bottom: 20px;
+    border: 2px solid white !important;
+}
+
+.allContainer.container{
+    background-color: darkslategrey;
+}
+
+.allBody.card-body{
+    background-color: black;
+}
+
+#root{
+    background-color: darkslategrey;
+    height: 100vh;
+}
