@@ -6,6 +6,8 @@ import SingleProduct from "./SingleProduct";
 import AppProvider  from "./AppContext";
 import RangeSlider from "react-bootstrap-range-slider";
 import { useState } from "react";
+import ContactPage from "./ContactPage";
+
 
 function App() {
   const [value, setValue] = useState<number>(0);
@@ -21,20 +23,20 @@ function App() {
             <a className="navFont" href="http://localhost:3000/">
               About us
             </a>
+            <a className="navFont" href="http://localhost:3000/ContactPage">
+              Sign Up
+            </a>
           </div>
           <div className="col-lg-4"></div>
           <div className="col-lg-2"><Search />
           </div>
         </div>
       </div>
-      <RangeSlider
-      value={value}
-      onChange={changeEvent => setValue(Number(changeEvent.target.value))}
-    />
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path={"/posts/:id"} component={SingleProduct} />
+          <Route exact path={"/ContactPage"} component={ContactPage}/>
         </Switch>
       </BrowserRouter>
 

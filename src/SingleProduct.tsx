@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { useParams } from "react-router";
 import SingleCard from "./SingleCard";
 import "./SingleProduct.css";
+import {ProductService} from "./ProductService"
 
 type Post = {
   id: number;
@@ -21,15 +22,7 @@ function SingleProduct() {
 
   const { id } = useParams<Postid>();
 
-  useEffect(() => {
-    fetch("http://localhost:3001/posts/" + id)
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setPostItem(myJson);
-      });
-  }, [id]);
+ProductService.getSingleProduct(id).then((response) => response.data).then((result) => setPostItem(result));
 
   return (
     <>

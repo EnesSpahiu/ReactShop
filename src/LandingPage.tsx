@@ -4,20 +4,13 @@ import LandingPageCard from "./LandingPageCard";
 import "./LandingPage.css";
 import { Post } from "./PostType";
 import { appContext } from "./AppContext";
+import { ProductService } from "./ProductService";
 
 function LandingPage() {
   const [postList, setPosts] = useState<Post[]>([]);
   const { searchQuery } = useContext(appContext);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/posts")
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setPosts(myJson);
-      });
-  }, []);
+  ProductService.getAllProducts().then((response) => response.data).then((result) => setPosts(result));
 
   return (
     <>

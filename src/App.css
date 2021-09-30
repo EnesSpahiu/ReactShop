@@ -61,10 +61,14 @@
 }
 
 .footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: dimgray;
-  margin: 0px !important;
+  color: white;
+  text-align: center;
 }
-
 .header{
   background-color: dimgray;
   margin-bottom: 20px !important;
@@ -73,7 +77,6 @@
 
 div.row.footer{
   background-color: dimgray;
-  margin: 0px !important;
 }
 
 .logoSM{
@@ -92,6 +95,7 @@ a.font{
 
 .row{
   margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 
 .slidecontainer {
